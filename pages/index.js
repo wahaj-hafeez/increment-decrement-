@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React,{ useState } from 'react'
+
+import Incdec from '../components/incdec';
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -22,28 +25,11 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-     <div style={{display : "flex" , flexDirection : "inline",marginInline:"10"}}>
-     <button onclick="activateLasers()" style={{ backgroundColor: "black",
-  color: "white",
-  fontSize: "20px",
-  padding: "10px 40px",
-  borderRadius: 50,
-  margin: "30px 0px",
-  cursor: "pointer"}}>
-  Increment
-</button>
 
-       <h1 style={{margin : 10,fontSize : 70}}>{number}</h1>
-       <button onclick="activateLasers()" style={{ backgroundColor: "black",
-  color: "white",
-  fontSize: "20px",
-  padding: "10px 40px",
-  borderRadius: 50,
-  margin: "30px 0px",
-  cursor: "pointer"}}>
-  Decreament
-</button>
-     </div>
+  
+     <Incdec/>
+
+
       </main>
 
       <footer className={styles.footer}>
